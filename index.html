@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Yetu - Ladha Halisi Kama Pizza Hut</title>
+    <meta name="description" content="Agiza pizza tamu zaidi mjini. Muonekano na hisia kama Pizza Hut.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">PizzaYetu 🍕</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Mwanzo</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menyu</a></li>
+                <li class="nav-item"><a href="#offers" class="nav-link">Ofa</a></li>
+                <li class="nav-item"><a href="#locations" class="nav-link">Matawi</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-primary" id="order-now-btn">Agiza Sasa</button>
+                <button class="cart-button" aria-label="Fungua kikapu">
+                    🛒 <span class="cart-counter">0</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ladha Isiyozuilika, Kila Mara.</h1>
+                <p>Tunakuletea pizza bora zaidi mjini, iliyoandaliwa kwa upendo na viungo freshi.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Tazama Menyu</a>
+                    <a href="#customizer" class="btn btn-secondary">Tengeneza Yako</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers-banner">
+            <h2>Ofa Maalum! Pata Pizza 2 kwa Bei ya 1 Jumanne Hii!</h2>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2 class="section-title">Menyu Yetu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Zote</button>
+                <button class="filter-btn" data-filter="veg">Mboga</button>
+                <button class="filter-btn" data-filter="meat">Nyama</button>
+                <button class="filter-btn" data-filter="special">Maalum</button>
+            </div>
+            <div class="menu-gallery">
+                </div>
+        </section>
+        
+        <section id="customizer" class="pizza-customizer">
+             <h2 class="section-title">Tengeneza Pizza Yako</h2>
+             <div class="customizer-container">
+                <div class="customizer-options">
+                    <fieldset>
+                        <legend>Chagua Ukubwa</legend>
+                        <label><input type="radio" name="size" value="10000" data-name="Ndogo" checked> Ndogo (10") - TSh 10,000</label>
+                        <label><input type="radio" name="size" value="15000" data-name="Kati (12")"> Kati (12") - TSh 15,000</label>
+                        <label><input type="radio" name="size" value="20000" data-name="Kubwa (14")"> Kubwa (14") - TSh 20,000</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Chagua Unga (Crust)</legend>
+                        <label><input type="radio" name="crust" value="0" data-name="Classic" checked> Classic Hand-Tossed</label>
+                        <label><input type="radio" name="crust" value="2000" data-name="Thin Crust"> Thin & Crispy (+TSh 2,000)</label>
+                        <label><input type="radio" name="crust" value="3000" data-name="Stuffed Crust"> Stuffed Crust (+TSh 3,000)</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ongeza Toppings (TSh 1,500 kila moja)</legend>
+                        <label><input type="checkbox" name="topping" value="1500" data-name="Extra Cheese"> Extra Cheese</label>
+                        <label><input type="checkbox" name="topping" value="1500" data-name="Mushrooms"> Uyoga</label>
+                        <label><input type="checkbox" name="topping" value="1500" data-name="Onions"> Vitunguu</label>
+                        <label><input type="checkbox" name="topping" value="1500" data-name="Olives"> Zeituni</label>
+                    </fieldset>
+                </div>
+                <div class="customizer-summary">
+                    <h3>Bei Yako:</h3>
+                    <p class="custom-price">TSh 10,000</p>
+                    <button class="btn btn-primary add-custom-to-cart">Ongeza Kwenye Kikapu</button>
+                </div>
+             </div>
+        </section>
+
+        <section id="locations" class="locations-section">
+            <h2 class="section-title">Tupate Hapa</h2>
+            <div class="location-finder">
+                <input type="text" placeholder="Weka eneo lako..." class="location-search">
+                <button class="btn btn-secondary">Tafuta</button>
+            </div>
+            <div class="map-container">
+                <img src="assets/hero-background.jpg" alt="Ramani ya eneo la mgahawa" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PizzaYetu</h4>
+                <p>Ladha bora, popote ulipo.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Wasiliana Nasi</h4>
+                <p>Simu: +255 7XX XXX XXX</p>
+                <p>Barua pepe: pendeza@pizzayetu.co.tz</p>
+            </div>
+            <div class="footer-section">
+                <h4>Jiunge na Jarida Letu</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Barua pepe yako" required>
+                    <button type="submit" class="btn btn-primary">Jiunge</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PizzaYetu. Haki Zote Zimehifadhiwa.</p>
+        </div>
+    </footer>
+
+    <aside class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Kikapu Chako</h3>
+            <button class="close-cart" aria-label="Funga kikapu">&times;</button>
+        </div>
+        <div class="cart-body">
+            <p class="cart-empty-msg">Kikapu chako ni kitupu.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Jumla Ndogo:</span>
+                <span id="cart-subtotal-price">TSh 0</span>
+            </div>
+            <button class="btn btn-primary btn-block">Endelea Kulipa</button>
+        </div>
+    </aside>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
